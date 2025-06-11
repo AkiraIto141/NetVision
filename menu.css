@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Questrial&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 10vh;
+    /* compensa a altura do menu fixo */
+}
+
+#sair img {
+    margin-top: 2px;
+    /*distancia do topo no logo*/
+    height: 3vh;
+    width: 3vh;
+}
+
+#sair {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+#sair:hover {
+    opacity: 0.8;
+    color: #66D7D1;
+
+}
+
+#sair:active {
+    opacity: 1;
+    color: #66d7d1;
+}
+
+.material-icons {
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+.menu,
+.logo {
+    color: white;
+    text-decoration: none;
+    transform: 0.3s;
+}
+
+.menu:hover {
+    opacity: 0.7;
+}
+
+.menu:active {
+    color: #cce879;
+
+}
+
+.arte_logo img {
+    margin-top: 2px;
+    height: 16vh;
+    width: 16vh;
+}
+
+
+.logo {
+
+    font-size: 2.9vh;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    padding-top: 10vh;
+    /* compensa a altura do menu fixo */
+}
+
+nav {
+    position: fixed;
+    /* Mantém o menu fixo no topo */
+    top: 0;
+    /* Encosta o menu no topo da janela */
+    left: 0;
+    /* Encosta o menu na lateral esquerda */
+    width: 100%;
+    /* Faz o menu ocupar toda a largura */
+    z-index: 1000;
+    /* Garante que fique acima dos outros elementos */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background-color: #23232e;
+    /* mudar cor*/
+    height: 11vh;
+    /*largura da fita do menu*/
+
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+    transition: color 0.3s ease;
+
+}
+
+.nav-list a {
+    padding: 20px;
+}
+
+.nav-list a:hover {
+    background-color: #385c38;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        /*largura do menu*/
+        height: 92vh;
+        background-color: #23232e;
+        /*mudar cor*/
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .material-icons {
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*____________________________Rodape_______________________________________________________ */
+
+
+.rodape__logo {
+    margin-bottom: 2em;
+    max-width: 20vh;
+    max-height: 20vh;
+}
+
+.hora h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #cce879c9;
+}
+
+.hora p {
+    color: white;
+    font-family: 'Questrial', sans-serif;
+}
+
+.rodape {
+    font-family: 'Questrial', sans-serif;
+    background-color: #2c612e9a;
+    text-align: center;
+    margin: 5em 3em;
+    border-radius: 15px;
+    align-items: center;
+    padding: 2vh;
+    margin-bottom: 0;
+}
+
+.rodape__texto {
+    margin: 2em 0;
+    color: white;
+    /*mudar cor*/
+    font-size: 1.8vh;
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+.conteinerRedeSocial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 0;
+}
+
+.redeSocial {
+    margin-bottom: 0px;
+}
+
+.rodape__lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.lista__link img {
+    width: 4vh;
+    height: 4vh;
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: #eeeeeee5;
+    margin-left: 1em;
+}
+
+.lista__link a:hover {
+    color: #cce879;
+}
+
+.lista__link a:active {
+    color: #9aaf5cb2;
+}
