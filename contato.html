@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetVison-Conta</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" href="https://i.postimg.cc/pXtV3vny/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./02NetVision.css" />
+    <link rel="stylesheet" href="./menu.css">
+</head>
+</head>
+
+<body>
+    <Header>
+        <nav>
+            <div class="arte_logo">
+                <img class="logo" src="https://i.postimg.cc/pXtV3vny/logo.png" alt="imagen da log do Colégio Boreal">
+            </div>
+            <a class="logo" href="/">NetVision</a>
+            <i class="material-icons">menu</i>
+
+            <ul class="nav-list">
+                <li><a class="menu" href="./index.html">Propósito</a></li>
+                <li><a class="menu" href="#">Serviços</a></li>
+                <li><a class="menu" href="#">Sobre Nós</a></li>
+                <li><a class="menu" href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </Header>
+
+    <div class="bloco" id="tabContato">
+        <form action="/Formulário" method="post">
+            <fieldset>
+                <legend class="legenContato">Envie um Mensagem através do Formulário:</legend>
+                <div class="coluna">
+                    <div class="informacao">
+                        <label for="Nome">Nome:</label>
+                        <input type="text" id="Nome" name="Nome" required>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="tel">Telefone:</label>
+                        <input type="tel" pattern="[0-9]{11}" required>
+                        <label for="estado" id="escolhaEstado">Estado:</label>
+                        <select name="sabor" id="sabores">
+                            <option value=" ">Selecione...</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                        <label for="Cidade">Cidade:</label>
+                        <input type="text" id="Cidade" name="Cidade" required>
+                    </div>
+                    <div class="informacao">
+                        <label for="text">Mensagem</label>
+                        <textarea name="text" id="text" rows="10" cols="40"
+                            placeholder="O que gostaria de escrever ?"></textarea>
+
+                        <button class="enviar" type="submit">Enviar</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <footer class="rodape">
+        <img src="https://i.postimg.cc/pXtV3vny/logo.png" alt="Colégio Boreal" class="rodape__logo">
+        <div class="hora">
+            <h1>Horário de atendimento</h1>
+            <p>Seg. à Sex: 8h00 às 21h30</p>
+        </div>
+        <div class="conteinerRedeSocial">
+
+            <div class="redeSocial">
+                <ul class="rodape__lista">
+                    <li class="lista__link">
+                        <a href="tel:01991234-5678" target="_blank">
+                            <img src="https://cdn-icons-png.freepik.com/256/455/455705.png" alt="Icone do Telefone">
+                            <p class="descrever">(19) 91234-5678</p>
+                        </a>
+                    </li>
+                    <li class="lista__link">
+                        <a href="tel:01998765-4321" target="_blank">
+                            <img src="https://cdn-icons-png.freepik.com/256/455/455705.png" alt="Icone do Telefone">
+                            <p class="descrever">(19) 98765-4321</p>
+                        </a>
+                    </li>
+                    <li class="lista__link">
+                        <a href="https://wa.me/551912345678?text=Quero%20um%20or%C3%A7amento" target="_blank">
+                            <img src="https://img.icons8.com/?size=512&id=16466&format=png" alt="Icone do Whatsapp">
+                            <p class="descrever">(19) 1234-5678</p>
+                        </a>
+                    </li>
+                    <li class="lista__link">
+                        <a href="tecno@netvision.com.br" target="_blank">
+                            <img src="https://cdn3.iconfinder.com/data/icons/web-ui-3/128/Mail-2-512.png"
+                                alt="Icone do E-mail">
+                            <p class="descrever">E-mail:tecno@netvision.com.br</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="redeSocial">
+                <ul class="rodape__lista">
+                    <li class="lista__link">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="https://img.icons8.com/?size=512&id=32320&format=png" alt="Icone do Instagram">
+                            <p class="descrever">@netvision.tech</p>
+                        </a>
+                    </li>
+                    <li class="lista__link">
+                        <a href="https://pt-br.facebook.com/login/device-based/regular/login/" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/512/20/20673.png" alt="Icone do Facebook">
+                            <p class="descrever">facebook.com/netvision.tech</p>
+                        </a>
+                    </li>
+                    <li class="lista__link">
+                        <a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D"
+                            target="_blank">
+                            <img src="https://static.vecteezy.com/system/resources/previews/031/737/206/non_2x/twitter-new-logo-twitter-icons-new-twitter-logo-x-2023-x-social-media-icon-free-png.png"
+                                alt="Icone do Twitter">
+                            <p class="descrever">@NetVisionTech</p>
+                        </a>
+                    </li>
+                    <li class="lista__link">
+                        <a href="https://www.tiktok.com/login?redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fpt-BR%2F&lang=en&enter_method=mandatory"
+                            target="_blank">
+                            <img src="https://static.vecteezy.com/system/resources/thumbnails/023/986/492/small_2x/tiktok-logo-tiktok-logo-transparent-tiktok-icon-transparent-free-free-png.png"
+                                alt="Icone do Tiktok">
+                            <p class="descrever">@netvision.tech</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="rodape__texto">© 2025 NetVision. Todos os direitos reservados. Empresa fundada em 2015.
+            Serviços, soluções e suporte técnico sujeitos à disponibilidade e às condições contratuais.</p>
+        <p class="rodape__texto">A NetVision oferece soluções tecnológicas de alta performance para
+            empresas, com foco em conectividade, infraestrutura de redes e transformação digital. A empresa
+            está registrada como NetVision Tecnologia Empresarial Ltda., Avenida Dom Pedro II, 1450 –
+            Distrito Industrial, Indaiatuba – SP, 13347-000, Brasil | CNPJ 45.239.681/0001-82</p>
+
+    </footer>
+    <script src="./mobile-navbar.js"></script>
+
+</body>
+
+</html>
