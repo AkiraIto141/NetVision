@@ -59,6 +59,20 @@ body {
 
 }
 
+/* #entrar {
+    color: #007F5F;  
+} 
+
+
+#entrar:hover {
+    opacity: 0.8;
+    color: #66D7D1;
+}
+
+#entrar:active {
+    color: #01FBBE;
+}*/
+
 .arte_logo img {
     margin-top: 2px;
     height: 16vh;
@@ -251,4 +265,144 @@ nav {
 
 .lista__link a:active {
     color: #9aaf5cb2;
+}
+@media (max-width: 480px) {
+
+  /* Hero Section */
+  .hero {
+    padding: 40px 15px;
+    background-attachment: scroll;
+  }
+
+  .hero h1 {
+    font-size: 1.5em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  /* Propósito */
+  .conteudo-proposito {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .texto-proposito h2 {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  .texto-proposito p {
+    font-size: 0.95em;
+    text-align: justify;
+  }
+
+  .imagem-proposito img {
+    width: 90%;
+  }
+
+  /* Cards de Serviços */
+  .cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+    font-size: 0.95em;
+  }
+
+  /* Seção Sobre */
+  .sobre h2 {
+    font-size: 1.5em;
+  }
+
+  .sobre p {
+    font-size: 0.95em;
+    padding: 0 10px;
+  }
+
+  /* Bloco Contato */
+  .bloco {
+    margin-top: 30px;
+    padding: 20px 10px;
+  }
+
+  .coluna {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .informacao {
+    width: 100%;
+    padding: 0;
+  }
+
+  .enviar {
+    width: 90%;
+    height: 35px;
+    font-size: 1em;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 90%;
+  }
+
+  /* Imagens Sobre */
+  .img img {
+    width: 90%;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  .img p {
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  /* Rodapé */
+  .rodape {
+    margin: 1em;
+    padding: 20px 10px;
+  }
+
+  .conteinerRedeSocial {
+    grid-template-columns: 1fr;
+  }
+
+
+
+  .rodape__texto {
+    font-size: 0.9em;
+    text-align: justify;
+    padding: 0 5px;
+  }
+
+  /* Menu superior */
+
+
+  .arte_logo img {
+    height: 10vh;
+    width: 10vh;
+
+  }
+
+
+  .material-icons {
+    font-size: 2em;
+  }
+
+
+
+  .conteinerRedeSocial {
+    grid-template-columns: 1fr;
+  }
+
+
+
 }

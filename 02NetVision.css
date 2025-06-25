@@ -181,6 +181,7 @@ body {
   grid-template-columns: 1fr 1fr;
   background-color: #29492a;
   border-radius: 4vh;
+  width: 100%;
 }
 
 .legenContato {
@@ -261,6 +262,7 @@ label {
 .titulo {
   color: #FFFFFF;
   margin-bottom: 2vh;
+
 }
 
 .texto {
@@ -271,7 +273,7 @@ label {
   padding: 1vh;
   color: #000000;
   font-size: 2.5vh;
-  line-height:1.3;
+  line-height: 1.3;
 }
 
 .legenContato {
@@ -291,4 +293,99 @@ label {
 
 .img {
   padding: 5px;
+}
+
+@media (max-width: 1024px) {
+
+  .conteudo-proposito,
+  .coluna,
+  .cards {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  .imagem-proposito img {
+    width: 90%;
+  }
+
+  .imagem {
+    height: 30vh;
+    width: 35vh;
+  }
+
+
+  .card {
+    width: 90%;
+  }
+
+  .bloco {
+    padding: 20px;
+    margin-top: 5vh;
+  }
+
+  figure p{
+    padding: 2vh;
+  }
+
+  .coluna {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .informacao {
+    padding: 0;
+    width: 100%;
+  }
+
+  .enviar {
+    width: 90%;
+  }
+
+  .hero {
+    padding: 60px 10px;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+  }
+
+  .texto-proposito h2 {
+    font-size: 1.5em;
+  }
+
+  .texto-proposito p {
+    font-size: 1em;
+  }
+
+  .services h2,
+  .sobre h2 {
+    font-size: 1.6em;
+  }
+
+  .rodape {
+    margin: 2em 1em;
+  }
+
+  .conteinerRedeSocial {
+    grid-template-columns: 1fr;
+  }
+
+  .lista__link {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .lista__link a {
+    display: flex;
+    align-items: center;
+  }
+
+  .lista__link p {
+    margin-left: 1vh;
+  }
 }
